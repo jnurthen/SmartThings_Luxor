@@ -106,7 +106,7 @@ def setupInit() {
         name:			"luxorIP",
         type:			"string",
         title:			"Enter IP Address of Luxor Controller",
-        defaultValue:	"xxx.xxx.xxx.xxx",
+        defaultValue:	"192.168.7.189",
         required:		true
     ]
 
@@ -149,7 +149,7 @@ def hubGet(def apiCommand, def body="{}", def _callback) {
         path: apiCommand,
         body: "${body}",
         headers: [
-            "HOST" : "${luxorIP}:80",
+            "HOST" : "192.168.7.189:80",
             "Content-Type": "application/json"],
         null,
         cb
